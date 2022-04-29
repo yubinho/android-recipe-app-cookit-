@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/nav_upload"
+        android:id="@+id/nav1"
+        android:icon="@drawable/ic_upload"
+
+        />
+    <item android:title="@string/nav_favorite"
+        android:icon="@drawable/ic_favorite"
+        android:id="@+id/nav2"
+        />
+    <item android:title= "@string/nav_main"
+        android:id="@+id/nav3"
+        android:icon="@drawable/ic_home"
+        />
+    <item android:title="@string/nav_edit"
+        android:id="@+id/nav4"
+        android:icon="@drawable/ic_update"
+        />
+    <item android:title="@string/nav_member"
+        android:id="@+id/nav5"
+        android:icon="@drawable/ic_user"
+        />
+
+</menu>

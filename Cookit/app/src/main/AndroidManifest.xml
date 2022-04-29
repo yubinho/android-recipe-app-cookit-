@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cookit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar">
+        <activity android:name=".MessageBoardActivity"></activity>
+        <activity android:name=".RecipeHistoryActivity" />
+        <activity android:name=".MenuDinnerActivity" />
+        <activity android:name=".MenuBreakfastActivity" />
+        <activity android:name=".RecipeDetailActivity" />
+        <activity android:name=".ChooseCustomMenuActivity" />
+        <activity android:name=".ChangeUserDataActivity" />
+        <activity android:name=".AuthenticationActivity" />
+        <activity android:name=".RecipeActivity" />
+        <activity android:name=".ChangePwdByForgetActivity" />
+        <activity android:name=".ChangePwdActivity" />
+        <activity
+            android:name=".CustomizeMenuActivity"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".MenuLunchActivity"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".LeftOverActivity"
+            android:parentActivityName=".FridgeActivity" />
+        <activity
+            android:name=".MenuActivity"
+            android:label="我的菜單" />
+        <activity
+            android:name=".FridgeActivity"
+            android:label="Cookit" />
+        <activity
+            android:name=".ForgetPwdActivity"
+            android:label="Cookit" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Cookit" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

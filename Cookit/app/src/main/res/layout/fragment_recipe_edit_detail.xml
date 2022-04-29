@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeEditDetailFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageHolder"
+            android:layout_marginTop="40dp"
+            android:layout_width="240dp"
+            android:layout_height="228dp"
+            android:src="@color/common_google_signin_btn_text_dark_disabled"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="left">
+
+            //作者
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="作者:"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/nameHolder"
+                    android:layout_marginLeft="5dp"
+                    android:text="Candidate Name"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            //名稱
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="食譜名稱:"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/recipeNameHolder"
+                    android:text="Candidate Course"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="25sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            //種類
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="食譜種類:"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/categoryHolder"
+                    android:text="Candidate Email"
+                    android:textSize="25sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            //簡介
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="食譜簡介:"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/recipeInfoHolder"
+                    android:text="Candidate Email"
+                    android:textSize="25sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            //卡路里
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="卡路里:"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/calorieHolder"
+                    android:text="Candidate Email"
+                    android:textSize="25sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            //原料
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="食譜原料:"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/recipeIngredientHolder"
+                    android:text="Candidate Email"
+                    android:textSize="25sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            //Step1
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Step1:"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/step1Holder"
+                    android:text="Candidate Email"
+                    android:textSize="25sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep1Holder"
+                android:layout_width="240dp"
+                android:layout_height="228dp"
+                android:layout_marginTop="10dp"
+                android:src="@color/common_google_signin_btn_text_dark_disabled" />
+            //step2
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Step2:"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/step2Holder"
+                    android:text="Candidate Email"
+                    android:textSize="25sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep2Holder"
+                android:layout_width="240dp"
+                android:layout_height="228dp"
+                android:layout_marginTop="10dp"
+                android:src="@color/common_google_signin_btn_text_dark_disabled" />
+
+            //step3
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Step3:"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/step3Holder"
+                    android:text="Candidate Email"
+                    android:textSize="25sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep3Holder"
+                android:layout_width="240dp"
+                android:layout_height="228dp"
+                android:layout_marginTop="10dp"
+                android:src="@color/common_google_signin_btn_text_dark_disabled" />
+            //step4
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Step4:"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/step4Holder"
+                    android:text="Candidate Email"
+                    android:textSize="25sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep4Holder"
+                android:layout_width="240dp"
+                android:layout_height="228dp"
+                android:layout_marginTop="10dp"
+                android:src="@color/common_google_signin_btn_text_dark_disabled" />
+            //step5
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Step5:"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/step5Holder"
+                    android:text="Candidate Email"
+                    android:textSize="25sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep5Holder"
+                android:layout_width="240dp"
+                android:layout_height="228dp"
+                android:layout_marginTop="10dp"
+                android:src="@color/common_google_signin_btn_text_dark_disabled" />
+            //step6
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Step6:"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/step6Holder"
+                    android:text="Candidate Email"
+                    android:textSize="25sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep6Holder"
+                android:layout_width="240dp"
+                android:layout_height="228dp"
+                android:layout_marginTop="10dp"
+                android:src="@color/common_google_signin_btn_text_dark_disabled" />
+            //step7
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Step7:"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/step7Holder"
+                    android:text="Candidate Email"
+                    android:textSize="25sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep7Holder"
+                android:layout_width="240dp"
+                android:layout_height="228dp"
+                android:layout_marginTop="10dp"
+                android:src="@color/common_google_signin_btn_text_dark_disabled" />
+            //step8
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Step8:"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/step8Holder"
+                    android:text="Candidate Email"
+                    android:textSize="25sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep8Holder"
+                android:layout_width="240dp"
+                android:layout_height="228dp"
+                android:layout_marginTop="10dp"
+                android:src="@color/common_google_signin_btn_text_dark_disabled" />
+            //step9
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Step9:"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/step9Holder"
+                    android:text="Candidate Email"
+                    android:textSize="25sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep9Holder"
+                android:layout_width="240dp"
+                android:layout_height="228dp"
+                android:layout_marginTop="10dp"
+                android:src="@color/common_google_signin_btn_text_dark_disabled" />
+            //step10
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Step10:"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/step10Holder"
+                    android:text="Candidate Email"
+                    android:textSize="25sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep10Holder"
+                android:layout_width="240dp"
+                android:layout_height="228dp"
+                android:layout_marginTop="10dp"
+                android:src="@color/common_google_signin_btn_text_dark_disabled" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

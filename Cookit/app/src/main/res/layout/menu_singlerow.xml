@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="8dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/srMenu_recipeIcon"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/srMenu_recipe_name"
+            android:text="This is Demo Name"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/srMenu_recipeIcon"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/srMenu_category"
+            android:text="This is category"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_below="@id/srMenu_recipe_name"
+            android:layout_toRightOf="@id/srMenu_recipeIcon"
+            android:layout_marginLeft="10dp"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/srMenu_time"
+            android:text="This is time"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/srMenu_recipeIcon"
+            android:layout_below="@id/srMenu_category"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:id="@+id/srMenu_delete"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/srMenu_recipeIcon"
+            android:src="@drawable/ic_delete" />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

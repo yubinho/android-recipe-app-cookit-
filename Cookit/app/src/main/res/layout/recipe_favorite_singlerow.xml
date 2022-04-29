@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="8dp"
+    app:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/sr_recipeUrl"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sr_recipe_name"
+            android:text="This is Demo Name"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/sr_recipeUrl"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sr_publisher"
+            android:text="This is Course Name"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_below="@id/sr_recipe_name"
+            android:layout_toRightOf="@id/sr_recipeUrl"
+            android:layout_marginLeft="10dp"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sr_category"
+            android:text="This is Email Name"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/sr_recipeUrl"
+            android:layout_below="@id/sr_publisher"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:id="@+id/srRecipe_delete"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/sr_category"
+            android:src="@drawable/ic_delete" />
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

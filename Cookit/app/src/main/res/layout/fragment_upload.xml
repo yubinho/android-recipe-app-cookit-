@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="0dp"
+        tools:context=".UploadFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/uploadIndex"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/title"
+                android:divider="@drawable/divider"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:showDividers="end"
+                android:text="@string/myUpload"
+                android:textSize="24sp" />
+
+
+
+            //食譜類別
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/uploadChooseType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/type" />
+            </LinearLayout>
+            //食譜名稱
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recipeName"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/uploadRecipeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="@string/recipeNameHint"
+                    android:inputType="text" />
+            </LinearLayout>
+            //食譜簡介
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/intro"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/uploadRecipeIntro"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="@string/introHint"
+                    android:inputType="text" />
+
+            </LinearLayout>
+            //所需食材
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="279dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ingredient"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/uploadIngredient"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:hint="@string/ingredientHint"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+            //step1
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step1"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/uploadStep1"
+                    android:layout_width="230dp"
+                    android:layout_height="150dp"
+                    android:hint="@string/step1Hint"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_uploadStep1"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/picture" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"/>
+            //step2
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step2"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/uploadStep2"
+                    android:layout_width="230dp"
+                    android:layout_height="150dp"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_uploadStep2"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/picture" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"/>
+            //step3
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step3"
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/uploadStep3"
+                    android:layout_width="230dp"
+                    android:layout_height="150dp"
+                    android:textSize="20sp" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_uploadStep3"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/picture" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep3"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"/>
+            //step4
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step4"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/uploadStep4"
+                    android:layout_width="230dp"
+                    android:layout_height="150dp"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_uploadStep4"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/picture" />
+
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep4"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"/>
+            //step5
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step5"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/uploadStep5"
+                    android:layout_width="230dp"
+                    android:layout_height="150dp"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_uploadStep5"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/picture" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep5"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"/>
+            //step6
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step6"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/uploadStep6"
+                    android:layout_width="230dp"
+                    android:layout_height="150dp"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_uploadStep6"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/picture" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep6"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"/>
+            //step7
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step7"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/uploadStep7"
+                    android:layout_width="230dp"
+                    android:layout_height="150dp"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_uploadStep7"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/picture" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep7"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"/>
+            //step8
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step8"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/uploadStep8"
+                    android:layout_width="230dp"
+                    android:layout_height="150dp"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_uploadStep8"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/picture" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep8"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"/>
+            //step9
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step9"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/uploadStep9"
+                    android:layout_width="230dp"
+                    android:layout_height="150dp"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_uploadStep9"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/picture" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep9"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"/>
+            //step10
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/step10"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/uploadStep10"
+                    android:layout_width="230dp"
+                    android:layout_height="150dp"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_uploadStep10"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/picture" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageStep10"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Cover"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_Recipe_cover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/uploadCover" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/recipe_Cover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                //送出按鈕
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/upload" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                //推畫面
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="上傳" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

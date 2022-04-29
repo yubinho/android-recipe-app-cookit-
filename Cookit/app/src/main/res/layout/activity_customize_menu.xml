@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".CustomizeMenuActivity">
+
+        <TextView
+            android:id="@+id/CustomIndex"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/title"
+            android:gravity="center"
+            android:text="客製化菜單"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:divider="@drawable/divider"
+            android:showDividers="middle"
+            android:padding="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日期"/>
+                <EditText
+                    android:id="@+id/Custom_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_custom_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="setDate"
+                    android:textSize="20sp"
+                    android:text="選擇日期" />
+            </LinearLayout>
+            //日期
+
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:text="選擇日期"-->
+<!--                android:textSize="20sp" />-->
+<!--            <DatePicker-->
+<!--                android:id="@+id/custom_datePicker"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="15dp" />-->
+            //食譜類別
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="食譜種類:"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/CustomType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/type" />
+            </LinearLayout>
+            //餐點時段
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15sp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="選擇餐點時段:"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    />
+
+                <Spinner
+                    android:id="@+id/customMenuChooseTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/time" />
+            </LinearLayout>
+            //卡路里限制
+
+
+            <TextView
+                android:id="@+id/CheckboxIndex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="卡路里(一餐)"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+
+                <EditText
+                    android:id="@+id/text_CalorieMin"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="min"
+                    android:inputType="number"
+                    android:paddingHorizontal="15dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="15dp"
+                    android:text="~"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/text_CalorietMax"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="max"
+                    android:inputType="number"
+                    android:paddingHorizontal="15dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="15dp"
+                    android:text="大卡"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_customSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_alignParentRight="true"
+                    android:text="送出" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

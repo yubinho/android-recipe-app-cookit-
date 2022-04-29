@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cookit</string>
+    <string name="login">login</string>
+    <string name="register">register</string>
+    <string name="forgetPassword">forget password</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="loginIndex">login</string>
+    <string name="changeLanguage">change language</string>
+    <string name="changePassword">change password</string>
+    <string name="myFridge">my fridge</string>
+    <string name="myMenu">my menu</string>
+    <string name="menuLog">browsing records</string>
+    <string name="userInfo">member info</string>
+    <string name="userIndex">member area</string>
+    <string name="logout">logout</string>
+    <string name="nav_member">member</string>
+    <string name="nav_edit">edit</string>
+    <string name="nav_main">mainPage</string>
+    <string name="nav_favorite">favorite</string>
+    <string name="nav_upload">upload</string>
+    <string name="currentNickname">Current nickname: </string>
+    <string name="newNickname">New nickname: </string>
+    <string name="newNicknameHint">Please enter new nickname </string>
+    <string name="sendOut">Send out</string>
+    <string name="myLog">my browsing history</string>
+    <string name="news">news</string>
+    <string name="pops">popular</string>
+    <string name="myFav">my favorite</string>
+    <string name="myUpload">upload recipe</string>
+    <string name="category">category:</string>
+    <string name="recipeName">recipe name: </string>
+    <string name="recipeNameHint">fried egg rice </string>
+    <string name="intro">intro: </string>
+    <string name="introHint">properties </string>
+    <string name="ingredient">ingredient: </string>
+    <string name="ingredientHint">EX: tomato:100g,egg:50g </string>
+    <string name="step1">step1: </string>
+    <string name="step1Hint">Ex: Whisk eggs, flour and butter into a smooth mixture until light and fluffy. </string>
+    <string name="step2">step2: </string>
+    <string name="step3">step3: </string>
+    <string name="step4">step4: </string>
+    <string name="step5">step5: </string>
+    <string name="step6">step6: </string>
+    <string name="step7">step7: </string>
+    <string name="step8">step8: </string>
+    <string name="step9">step9: </string>
+    <string name="step10">step10: </string>
+    <string name="picture">picture</string>
+    <string name="Cover">upload recipe cover</string>
+    <string name="uploadCover">upload cover</string>
+    <string name="upload">upload</string>
+    <string name="messageBoard">my comment</string>
+    <string name="changePwdIndex">forget password</string>
+    <string name="emailInput">email: </string>
+    <string name="EnterEmail">please input email</string>
+    <string name="EmailHint">we will send an email for changing your password</string>
+    <string name="forgetPwdIndex">forget password</string>
+    <string name="breakfast">breakfast</string>
+    <string name="lunch">lunch</string>
+    <string name="dinner">dinner</string>
+    <string name="customizeMenu">customize menu</string>
+    <string name="FridgeIndex">my fridge</string>
+    <string name="clearFridge">clear fridge</string>
+    <string name="leftOverInput">leftOver manage</string>
+    <string name="leftOver">leftOver</string>
+    <string name="leftOverHint">there is no leftOver</string>
+    <string name="recommendRecipe">recommend</string>
+    <string-array name="type">
+        <item>meat</item>
+        <item>vegetarian</item>
+    </string-array>
+    <string-array name="time">
+        <item>早餐</item>
+        <item>午餐</item>
+        <item>晚餐</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

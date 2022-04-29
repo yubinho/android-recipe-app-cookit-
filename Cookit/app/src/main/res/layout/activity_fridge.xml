@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="0dp"
+        tools:context=".FridgeActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/title"
+            android:gravity="center"
+            android:text="@string/FridgeIndex"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_toLeftover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/ic_update"
+                    android:background="@color/ButtonTransparent"
+                    android:text="@string/leftOverInput"
+                    android:textColor="@color/ButtonUrl"
+                    android:textSize="20sp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_clearFridge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_delete"
+                    android:background="@color/ButtonTransparent"
+                    android:text="@string/clearFridge"
+                    android:textColor="@color/ButtonUrl"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+            //食材
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/leftOver"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fridge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="@string/leftOverHint"
+                android:textSize="20sp" />
+<!--                android:text="蛋\n豬肉\n高麗菜"-->
+
+            //推薦食譜
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/ButtonTransparent"
+                android:text="@string/recommendRecipe"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <androidx.recyclerview.widget.RecyclerView
+
+                    android:id="@+id/fridgeRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical"/>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

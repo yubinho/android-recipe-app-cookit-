@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    tools:context=".UserManageFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/userIndex"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:drawableStart="@drawable/ic_user"
+        android:divider="@drawable/divider"
+        android:showDividers="end"
+        android:background="@color/title"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider"
+        android:showDividers="middle"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/greeting"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="User"
+            android:drawableStart="@drawable/ic_user"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/ButtonTransparent"
+            android:drawableRight="@drawable/ic_uploadcam"/>
+    </LinearLayout>
+
+    //會員基本資料
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_user_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/ButtonTransparent"
+        android:layout_marginTop="20dp"
+        android:text="@string/userInfo" />
+
+
+    //瀏覽紀錄
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_browse_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ButtonTransparent"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:text="@string/menuLog" />
+
+    //我的菜單
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_user_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/ButtonTransparent"
+        android:layout_marginTop="5dp"
+        android:text="@string/myMenu" />
+
+    //我的冰箱
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_user_fridge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ButtonTransparent"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:text="@string/myFridge" />
+
+        //我的留言
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_user_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ButtonTransparent"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:text="@string/messageBoard" />
+
+    //更改密碼
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_user_change_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ButtonTransparent"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:text="@string/changePassword" />
+        //更改密碼
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_changeLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ButtonTransparent"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:text="@string/changeLanguage" />
+
+    //登出
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_user_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ButtonTransparent"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:text="@string/logout" />
+    </LinearLayout>
+</LinearLayout>

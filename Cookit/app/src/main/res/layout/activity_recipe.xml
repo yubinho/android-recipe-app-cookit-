@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/divider"
+        android:showDividers="middle"
+        android:orientation="vertical"
+        tools:context=".TomatoEggRecipeActivity">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="番茄炒蛋"
+            android:background="@color/title"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
+
+
+
+        //食譜類別
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="食譜類別:葷"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="卡路里(kcal):120"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+        //所需食材
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所需食材:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/uploadIngredient"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:hint="番茄2-3顆\n雞蛋2顆"
+                android:textSize="20sp" />
+        </LinearLayout>
+        //step1
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="步驟一:"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/uploadStep1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:text="將全部食材準備好,蛋液打勻"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+        //step2
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="步驟二:"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/uploadStep2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:text="將全部食材準備好,蛋液打勻"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+        //step3
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="步驟三:"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/uploadStep3"
+                android:layout_width="230dp"
+                android:layout_height="150dp"
+                android:text="將全部食材準備好,蛋液打勻"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+        //step4
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="步驟四:"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/uploadStep4"
+                android:layout_width="230dp"
+                android:layout_height="150dp"
+                android:text="將全部食材準備好,蛋液打勻"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+        //step5
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="步驟五:"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/uploadStep5"
+                android:layout_width="230dp"
+                android:layout_height="150dp"
+                android:text="將全部食材準備好,蛋液打勻"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp">-->
+<!--            //送出按鈕-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_recipe_choose"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:text="選擇" />-->
+<!--        </RelativeLayout>-->
+
+
+    </LinearLayout>
+</ScrollView>

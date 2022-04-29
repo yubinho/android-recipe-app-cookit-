@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".RegisterActivity">
+
+
+        <TextView
+            android:id="@+id/RegisterIndex"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/title"
+            android:gravity="center"
+            android:text="註冊"
+            android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/RegisterIndex"
+            android:layout_marginTop="50dp"
+            android:hint="姓名"
+            android:inputType="text"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/Re_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/user_name"
+            android:layout_marginTop="15dp"
+            android:hint="Email"
+            android:inputType="textVisiblePassword"
+            android:textSize="20sp" />
+
+
+
+        <EditText
+            android:id="@+id/Re_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/user_name"
+            android:layout_marginTop="15dp"
+            android:hint="密碼"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Re_pwd"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="註冊" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_toLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="返回登入"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_reg_forgetPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="忘記密碼"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

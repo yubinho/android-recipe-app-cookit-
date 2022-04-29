@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "538533905584",
+    "project_id": "cookit-84b77",
+    "storage_bucket": "cookit-84b77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538533905584:android:6f7f61e9c668e669fe6775",
+        "android_client_info": {
+          "package_name": "com.example.cookit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538533905584-kk1i3fhsda5qlmqeqn6v73s8edlp2u74.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm2Mez4g-ubkyvHyHzhQXk7WYheAD89Sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "538533905584-kk1i3fhsda5qlmqeqn6v73s8edlp2u74.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

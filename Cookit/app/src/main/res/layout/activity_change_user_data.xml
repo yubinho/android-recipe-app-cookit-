@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChangeUserDataActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="24sp"
+        android:background="@color/title"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="更改資料"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/currentNickname"
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/currentUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:hint="Current Name"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/newNickname"
+            android:textSize="25sp"/>
+        <EditText
+            android:id="@+id/resetUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:textSize="25sp"
+            android:hint="@string/newNicknameHint"/>
+    </LinearLayout>
+
+    //送出按鈕
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_ResetUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingHorizontal="15dp"
+            android:layout_marginTop="25dp"
+            android:textSize="20sp"
+            android:text="@string/sendOut" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
