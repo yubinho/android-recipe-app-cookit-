@@ -12,46 +12,46 @@ Android OS > 8.0
 
 ## System Architecture
 
-!["系統架構"](./Screenshots/Architecture.png)
+!["系統架構"](https://github.com/yubinho/android-recipe-app-cookit-/blob/main/Screenshots/Architecture.png)
 
 ## Usage
 
 * 首頁
   
-!["首頁"](./Screenshots/Main.png)
+!["首頁"](https://github.com/yubinho/android-recipe-app-cookit-/blob/main/Screenshots/Main.png)
 
 * 搜尋
   
-!["搜尋"](./Screenshots/search.png)
+!["搜尋"](https://github.com/yubinho/android-recipe-app-cookit-/blob/main/Screenshots/search.png)
 
 * 註冊
   
-!["註冊"](./Screenshots/reg.png)
+!["註冊"](https://github.com/yubinho/android-recipe-app-cookit-/blob/main/Screenshots/reg.png)
 
 * 登入
   
-!["登入"](./Screenshots/login.png)
+!["登入"](https://github.com/yubinho/android-recipe-app-cookit-/blob/main/Screenshots/login.png)
 
 * 上傳
   
-!["首頁"](./Screenshots/Upload.png)
+!["首頁"](https://github.com/yubinho/android-recipe-app-cookit-/blob/main/Screenshots/upload.png)
 
 * 修改/刪除
   
-!["修改/刪除"](./Screenshots/Update.png)
+!["修改/刪除"](https://github.com/yubinho/android-recipe-app-cookit-/blob/main/Screenshots/update.png)
 
 * 會員專區
   
-!["會員專區"](./Screenshots/Manage.png)
+!["會員專區"](https://github.com/yubinho/android-recipe-app-cookit-/blob/main/Screenshots/Manage.png)
 
 * 英文介面
   
-!["英文介面"](./Screenshots/lang.png)
+!["英文介面"](https://github.com/yubinho/android-recipe-app-cookit-/blob/main/Screenshots/lang.png)
 
 * 我的冰箱
   
-!["我的冰箱"](./Screenshots/fridge.png)
+!["我的冰箱"](https://github.com/yubinho/android-recipe-app-cookit-/blob/main/Screenshots/fridge.png)
 
 * 客製化菜單
   
-!["客製化菜單"](./Screenshots/customized.png)
+!["客製化菜單"](https://github.com/yubinho/android-recipe-app-cookit-/blob/main/Screenshots/customized.png)
