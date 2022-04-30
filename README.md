@@ -10,7 +10,7 @@ Android OS > 8.0
 
 直接將cookit.apk下載至任一Android行動裝置或模擬器中
 
-## Architecture
+## System Architecture
 
 !["系統架構"](./Screenshots/Architecture.png)
 
@@ -22,7 +22,15 @@ Android OS > 8.0
 
 * 搜尋
   
-!["搜尋"](./Screenshots/Search.png)
+!["搜尋"](./Screenshots/search.png)
+
+* 註冊
+  
+!["註冊"](./Screenshots/reg.png)
+
+* 登入
+  
+!["登入"](./Screenshots/login.png)
 
 * 上傳
   
