@@ -22,7 +22,7 @@ Android OS > 8.0
 
 * 搜尋
   
-!["搜尋"](https://github.com/yubinho/android-recipe-app-cookit-/blob/main/Screenshots/search.PNG)
+!["搜尋"](https://github.com/yubinho/android-recipe-app-cookit-/blob/main/Screenshots/Search.PNG)
 
 * 註冊
   
