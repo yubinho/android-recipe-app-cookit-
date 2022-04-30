@@ -34,11 +34,11 @@ Android OS > 8.0
 
 * 上傳
   
-!["首頁"](https://github.com/yubinho/android-recipe-app-cookit-/blob/main/Screenshots/upload.PNG)
+!["首頁"](https://github.com/yubinho/android-recipe-app-cookit-/blob/main/Screenshots/Upload.PNG)
 
 * 修改/刪除
   
-!["修改/刪除"](https://github.com/yubinho/android-recipe-app-cookit-/blob/main/Screenshots/update.PNG)
+!["修改/刪除"](https://github.com/yubinho/android-recipe-app-cookit-/blob/main/Screenshots/Update.PNG)
 
 * 會員專區
   
@@ -46,7 +46,7 @@ Android OS > 8.0
 
 * 英文介面
   
-!["英文介面"](https://github.com/yubinho/android-recipe-app-cookit-/blob/main/Screenshots/lang.PNG)
+!["英文介面"](https://github.com/yubinho/android-recipe-app-cookit-/blob/main/Screenshots/lang.png)
 
 * 我的冰箱
   
